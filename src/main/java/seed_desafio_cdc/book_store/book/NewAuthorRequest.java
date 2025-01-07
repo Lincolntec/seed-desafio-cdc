@@ -24,4 +24,8 @@ public class NewAuthorRequest {
         this.email = email;
         this.description = description;
     }
+
+    public Author toModel() {
+        return new Author( this.name, this.email, this.description);
+    }
 }
